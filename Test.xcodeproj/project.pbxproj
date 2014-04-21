@@ -22,6 +22,7 @@
 		6FB5DBF819052B5100B714A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FB5DBDA19052B5100B714A9 /* UIKit.framework */; };
 		6FB5DC0019052B5100B714A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6FB5DBFE19052B5100B714A9 /* InfoPlist.strings */; };
 		6FB5DC0219052B5100B714A9 /* TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB5DC0119052B5100B714A9 /* TestTests.m */; };
+		6FB5DC0E19052C8000B714A9 /* Test1.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB5DC0D19052C8000B714A9 /* Test1.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		6FB5DBFD19052B5100B714A9 /* TestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestTests-Info.plist"; sourceTree = "<group>"; };
 		6FB5DBFF19052B5100B714A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6FB5DC0119052B5100B714A9 /* TestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTests.m; sourceTree = "<group>"; };
+		6FB5DC0C19052C8000B714A9 /* Test1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test1.h; sourceTree = "<group>"; };
+		6FB5DC0D19052C8000B714A9 /* Test1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test1.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,7 @@
 		6FB5DBDC19052B5100B714A9 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				6FB5DC0B19052C6C00B714A9 /* test */,
 				6FB5DBE519052B5100B714A9 /* TestAppDelegate.h */,
 				6FB5DBE619052B5100B714A9 /* TestAppDelegate.m */,
 				6FB5DBE819052B5100B714A9 /* Main.storyboard */,
@@ -163,6 +167,15 @@
 				6FB5DBFE19052B5100B714A9 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6FB5DC0B19052C6C00B714A9 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				6FB5DC0C19052C8000B714A9 /* Test1.h */,
+				6FB5DC0D19052C8000B714A9 /* Test1.m */,
+			);
+			name = test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +278,7 @@
 			files = (
 				6FB5DBED19052B5100B714A9 /* TestViewController.m in Sources */,
 				6FAB3EA319052C2800088E3C /* FirstTestView.m in Sources */,
+				6FB5DC0E19052C8000B714A9 /* Test1.m in Sources */,
 				6FB5DBE719052B5100B714A9 /* TestAppDelegate.m in Sources */,
 				6FB5DBE319052B5100B714A9 /* main.m in Sources */,
 			);
