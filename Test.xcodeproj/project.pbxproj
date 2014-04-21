@@ -23,6 +23,7 @@
 		6FB5DC0019052B5100B714A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6FB5DBFE19052B5100B714A9 /* InfoPlist.strings */; };
 		6FB5DC0219052B5100B714A9 /* TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB5DC0119052B5100B714A9 /* TestTests.m */; };
 		6FB5DC0E19052C8000B714A9 /* Test1.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB5DC0D19052C8000B714A9 /* Test1.m */; };
+		6FB5DC1119052CFF00B714A9 /* Test11111.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB5DC1019052CFF00B714A9 /* Test11111.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		6FB5DC0119052B5100B714A9 /* TestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTests.m; sourceTree = "<group>"; };
 		6FB5DC0C19052C8000B714A9 /* Test1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test1.h; sourceTree = "<group>"; };
 		6FB5DC0D19052C8000B714A9 /* Test1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test1.m; sourceTree = "<group>"; };
+		6FB5DC0F19052CFF00B714A9 /* Test11111.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test11111.h; sourceTree = "<group>"; };
+		6FB5DC1019052CFF00B714A9 /* Test11111.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test11111.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +177,8 @@
 			children = (
 				6FB5DC0C19052C8000B714A9 /* Test1.h */,
 				6FB5DC0D19052C8000B714A9 /* Test1.m */,
+				6FB5DC0F19052CFF00B714A9 /* Test11111.h */,
+				6FB5DC1019052CFF00B714A9 /* Test11111.m */,
 			);
 			name = test;
 			sourceTree = "<group>";
@@ -279,6 +284,7 @@
 				6FB5DBED19052B5100B714A9 /* TestViewController.m in Sources */,
 				6FAB3EA319052C2800088E3C /* FirstTestView.m in Sources */,
 				6FB5DC0E19052C8000B714A9 /* Test1.m in Sources */,
+				6FB5DC1119052CFF00B714A9 /* Test11111.m in Sources */,
 				6FB5DBE719052B5100B714A9 /* TestAppDelegate.m in Sources */,
 				6FB5DBE319052B5100B714A9 /* main.m in Sources */,
 			);

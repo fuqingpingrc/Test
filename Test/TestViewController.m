@@ -9,7 +9,7 @@
 #import "TestViewController.h"
 
 @interface TestViewController ()
-
+#define M_PI     3.14159265358979323846264338327950288
 @end
 
 @implementation TestViewController
@@ -18,6 +18,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    NSLog(@"%@",@"122222");
 }
 
 - (void)didReceiveMemoryWarning
