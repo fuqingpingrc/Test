@@ -26,6 +26,26 @@
     UIPageControl *pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(270, 8, 40, 20)];
     pageControl.userInteractionEnabled = YES;
     pageControl.backgroundColor = [UIColor clearColor];
+    
+    
+    
+    //添加center按钮和说明
+    for(int i = 0; i < 6; i++){
+        UIView* viewCenter = [[UIView alloc] initWithFrame:CGRectMake(i*54, 0, 50, 50)];
+        UIButton *buttonCenter = [UIButton buttonWithType:UIButtonTypeCustom];
+        CGRect frameCenter = CGRectMake(5.0f, 0.0f, 40.0f, 40.0f);
+        buttonCenter.tag = i;
+        
+        UILabel *labelCenter = [[UILabel alloc] initWithFrame:CGRectMake(0, 40, 50, 10)];
+        labelCenter.font = [UIFont fontWithName:@"Arial" size:10];
+        labelCenter.textAlignment = NSTextAlignmentCenter;
+        buttonCenter.frame = frameCenter;
+        [viewCenter addSubview:buttonCenter];
+        [viewCenter addSubview:labelCenter];
+
+    }
+    
+    
     pageControl.numberOfPages = 3;
     pageControl.currentPage = 0; //当前页码
     [newsView addSubview:pageControl];
