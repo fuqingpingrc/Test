@@ -19,18 +19,22 @@
     [super viewDidLoad];
     
     
-    UIView *newsView = [[UIView alloc]initWithFrame:CGRectMake(0, 139, 320, 36)];
+    UIView *newsView = [[UIView alloc]initWithFrame:CGRectMake(0, 239, 320, 36)];
     newsView.backgroundColor = [UIColor blackColor];
     newsView.alpha = 0.4f;
     
     UIPageControl *pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(270, 8, 40, 20)];
     pageControl.userInteractionEnabled = YES;
     pageControl.backgroundColor = [UIColor clearColor];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showTabbar) name:@"showTabbar" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(hiddenTabbar) name:@"hiddenTabbar" object:nil];
+    
     pageControl.numberOfPages = 3;
     pageControl.currentPage = 0; //当前页码
     [newsView addSubview:pageControl];
     
-    UILabel *newsLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 10, 260, 16)];
+    UILabel *newsLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 110, 260, 16)];
     newsLabel.textColor = [UIColor whiteColor];
     newsLabel.backgroundColor = [UIColor clearColor];
     newsLabel.font = [UIFont systemFontOfSize:16.0];
@@ -44,6 +48,23 @@
 - (void)gotoTest
 {
     NSLog(@"jflkwjgojwiogjewg");
+}
+
+
+- (UIImage *)addImage:(UIImage *)image1 toImage:(UIImage *)image2{
+    
+    UIGraphicsBeginImageContext(image1.size);
+    
+    [image1 drawInRect:CGRectMake(0, 0, image1.size.width, image1.size.height)];
+    
+    [image2 drawInRect:CGRectMake(0, 0, image2.size.width, image2.size.height)];
+    
+    UIImage *resultingImage = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    return resultingImage;
+    
 }
 
 - (void)didReceiveMemoryWarning
